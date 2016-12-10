@@ -1,8 +1,7 @@
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 import {routing, RootComponent} from './routes';
-
-import {HelloComponent} from './hello';
+import {MainComponent} from "./components/main-component";
 
 @NgModule({
   imports: [
@@ -11,7 +10,7 @@ import {HelloComponent} from './hello';
   ],
   declarations: [
     RootComponent,
-    HelloComponent
+    MainComponent
   ],
   bootstrap: [RootComponent]
 })

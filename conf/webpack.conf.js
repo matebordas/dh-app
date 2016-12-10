@@ -23,6 +23,12 @@ module.exports = {
         ]
       },
       {
+        test: /.(png|eot|woff)/,
+        loaders: [
+          'file'
+        ]
+      },
+      {
         test: /\.(css|scss)$/,
         loaders: [
           'style',
@@ -55,7 +61,11 @@ module.exports = {
     new webpack.ContextReplacementPlugin(
       /angular(\\|\/)core(\\|\/)(esm(\\|\/)src|src)(\\|\/)linker/,
       conf.paths.src
-    )
+    ),
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery"
+    })
   ],
   postcss: () => [autoprefixer],
   debug: true,

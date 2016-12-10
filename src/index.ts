@@ -6,6 +6,9 @@ import 'zone.js/dist/zone';
 import '@angular/common';
 import 'rxjs';
 
+import '../node_modules/jquery';
+import 'bootstrap/dist/js/bootstrap';
+
 import './index.scss';
 
 import {enableProdMode} from '@angular/core';

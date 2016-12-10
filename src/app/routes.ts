@@ -2,10 +2,10 @@
 
 import {Component} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
-import {HelloComponent} from './hello';
+import {MainComponent} from "./components/main-component";
 
 @Component({
-  selector: 'fountain-root',
+  selector: 'root-component',
   template: '<router-outlet></router-outlet>'
 })
 export class RootComponent {}
@@ -13,7 +13,7 @@ export class RootComponent {}
 export const routes: Routes = [
   {
     path: '',
-    component: HelloComponent
+    component: MainComponent
   }
 ];
 
