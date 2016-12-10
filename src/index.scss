@@ -1,9 +1,16 @@
 @import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css');
 
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 body {
   background-color: lightgrey;
   height: 100%;
   width: 100%;
+  overflow-x: hidden;
   padding: 0;
   margin: 0;
 }

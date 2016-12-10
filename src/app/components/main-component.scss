@@ -1,5 +1,10 @@
 @import '../../assets/fonts';
+@import '../../assets/variables';
 
+$head-footer-height: 70px;
+$section-height-laptop: 645px;
+
+/** Header section **/
 #content-wrapper {
   height: 100%;
   width: 100%;
@@ -12,46 +17,82 @@
   position: relative;
   height: 100%;
   width: 100%;
+
+  /* laptops and desktops */
+  @media only screen and (min-width: 1000px) {
+    min-height: $section-height-laptop;
+  }
 }
 
 .header-section {
-  background-image: url('../../assets/images/Header_image.png');
-  background-repeat: no-repeat;
-  background-size: 100% auto;
+  main {
+    background-image: url('../../assets/images/Header_image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 
-  .title-container {
-    color: #ffffff;
-    top: 40%;
-    text-align: center;
-    display: block;
-    position: relative;
-
-    .main-title {
-      font-family: HeavyFont;
-    }
-
-    .secondary-title {
-      font-family: RegularFont;
-    }
-
-    h1, h2, h3 {
-      margin: 0;
+    @media only screen and (min-width: 1000px) {
+      height: calc(#{$section-height-laptop} - #{$head-footer-height});
     }
   }
+}
 
-  .head-footer {
-    background: red;
-    position: absolute;
-    width: 100%;
-    height: 15%;
-    bottom: 0px;
-    display: block;
+.title-container {
+  color: #ffffff;
+  top: 40%;
+  text-align: center;
+  display: block;
+  position: relative;
+
+  .main-title {
+    font-family: HeavyFont;
+  }
+
+  .secondary-title {
+    font-family: RegularFont;
+  }
+
+  h1, h2, h3 {
+    margin: 0;
+  }
+}
+
+.head-footer {
+  background: $red-bg;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  display: block;
+  margin: 0;
+  height: $head-footer-height;
+
+  span {
+    text-align: center;
+    transform: translateY(40%);
+  }
+
+  .left-side {
+    color: #ffffff;
+    font-family: RegularFont;
+  }
+
+  .right-side > button {
+    color: lighten(#000000, 30%);
+    background-color: $yellow-bg;
+    font-family: BoldFont;
+    border-color:$yellow-bg;
   }
 
 }
 
-/*.img-fit-container {
-  z-index: -1;
-  max-width: 100%;
-  height: auto;
-}*/
+/** Second section **/
+.second-section {
+  background-color: #ffffff;
+
+  .left-side-content {
+    .phone-img {
+      right: 10%;
+      position: absolute;
+      transform: translateY(5%);
+    }
+  }
+}
