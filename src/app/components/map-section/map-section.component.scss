@@ -1,0 +1,28 @@
+.second-section {
+  background-color: #ffffff;
+
+  .left-side-content {
+    .phone-img {
+      right: 10%;
+      position: absolute;
+      transform: translateY(5%);
+    }
+  }
+
+  .map-container {
+    text-align: center;
+    width: 70%;
+    margin-top: 20%;
+  }
+
+  .map-img {
+    height: 150px;
+    width: 150px;
+    display: block;
+    margin: auto;
+  }
+
+  .map-description {
+    font-family: RegularFont;
+  }
+}
