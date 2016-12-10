@@ -4,6 +4,7 @@ import {routing, RootComponent} from './routes';
 import {MainComponent} from "./components/main-component";
 import {HeadSectionComponent} from "./components/header-section/header-section.component";
 import {MapSectionComponent} from "./components/map-section/map-section.component";
+import {RestaurantSectionComponent} from "./components/restaurant-section/restaurant-section.component";
 
 @NgModule({
   imports: [
@@ -14,7 +15,8 @@ import {MapSectionComponent} from "./components/map-section/map-section.componen
     RootComponent,
     MainComponent,
     HeadSectionComponent,
-    MapSectionComponent
+    MapSectionComponent,
+    RestaurantSectionComponent
   ],
   bootstrap: [RootComponent]
 })

@@ -1,0 +1,41 @@
+.section-content {
+  background-color: #ffffff;
+}
+
+.image-container {
+  position: absolute;
+  transform: translateY(5%);
+  margin-top: 20%;
+
+  &.align-left {
+    left: 20%;
+  }
+
+  &.align-right {
+    right: 10%;
+  }
+}
+
+.image-icon {
+  height: 150px;
+  width: 150px;
+  display: block;
+  margin: auto;
+}
+
+.image-description {
+  font-family: RegularFont;
+}
+
+.phone-image {
+  transform: translateY(5%);
+  position: absolute;
+
+  &.align-left {
+    left: 20%;
+  }
+
+  &.align-right {
+    right: 10%;
+  }
+}

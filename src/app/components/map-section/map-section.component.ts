@@ -1,34 +1,34 @@
 import {Component} from '@angular/core';
 
-require('./map-section.component.scss');
+//require('./map-section.component.scss');
 
 @Component({
     selector: 'map-section',
     template: `
-    <section class="screen-size second-section">
+    <section class="screen-size section-content">
     <div class="row">
-      <span class="left-side-content col-sm-6">
+      
+      <span class="col-sm-6">
           <img src="../../assets/images/phone_1.png"
                alt="Phone 1"
-               class="phone-img">
-      </span>
+               class="phone-image align-right">
+      </span> <!--left -->
 
-      <span class="right-side-content col-sm-6">
-
-        <div class="map-container">
-          <img src="../../assets/icons/rich_icon_1@2x.png"
-               alt="Map icon"
-               class="map-img">
-
-          <h4 class="map-description">
-            Dein Zugang zu über <strong>10 000+</strong> Restaurants <br>
-            und mehr als <strong>60</strong> verschiedenen Küchen
-          </h4>
+      <span class=" col-sm-6">
+      
+        <div class="image-container align-left">
+              <img src="../../assets/icons/rich_icon_1@2x.png"
+                   alt="Map icon"
+                   class="image-icon">
+    
+              <h4 class="image-description">
+                Dein Zugang zu über <strong>10 000+</strong> Restaurants <br>
+                und mehr als <strong>60</strong> verschiedenen Küchen
+              </h4>
         </div>
+      </span> <!--right -->
 
-      </span>
-
-    </div>
+    </div> <!--row-->
     </section> <!-- SECOND SECTION -->
 `
 })
