@@ -2,6 +2,7 @@ import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 import {routing, RootComponent} from './routes';
 import {MainComponent} from "./components/main-component";
+import {HeadSectionComponent} from "./components/header-section/header-section.component";
 
 @NgModule({
   imports: [
@@ -10,7 +11,8 @@ import {MainComponent} from "./components/main-component";
   ],
   declarations: [
     RootComponent,
-    MainComponent
+    MainComponent,
+    HeadSectionComponent
   ],
   bootstrap: [RootComponent]
 })

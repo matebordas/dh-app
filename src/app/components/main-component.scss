@@ -1,10 +1,5 @@
-@import '../../assets/fonts';
 @import '../../assets/variables';
 
-$head-footer-height: 70px;
-$section-height-laptop: 645px;
-
-/** Header section **/
 #content-wrapper {
   height: 100%;
   width: 100%;
@@ -24,66 +19,7 @@ $section-height-laptop: 645px;
   }
 }
 
-.header-section {
-  main {
-    background-image: url('../../assets/images/Header_image.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    @media only screen and (min-width: 1000px) {
-      height: calc(#{$section-height-laptop} - #{$head-footer-height});
-    }
-  }
-}
-
-.title-container {
-  color: #ffffff;
-  top: 40%;
-  text-align: center;
-  display: block;
-  position: relative;
-
-  .main-title {
-    font-family: HeavyFont;
-  }
-
-  .secondary-title {
-    font-family: RegularFont;
-  }
-
-  h1, h2, h3 {
-    margin: 0;
-  }
-}
-
-.head-footer {
-  background: $red-bg;
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  display: block;
-  margin: 0;
-  height: $head-footer-height;
-
-  span {
-    text-align: center;
-    transform: translateY(40%);
-  }
-
-  .left-side {
-    color: #ffffff;
-    font-family: RegularFont;
-  }
-
-  .right-side > button {
-    color: lighten(#000000, 30%);
-    background-color: $yellow-bg;
-    font-family: BoldFont;
-    border-color:$yellow-bg;
-  }
-
-}
-
+/******************************************/
 /** Second section **/
 .second-section {
   background-color: #ffffff;
@@ -113,3 +49,6 @@ $section-height-laptop: 645px;
     font-family: RegularFont;
   }
 }
+
+/******************************************/
+/** Third Section **/

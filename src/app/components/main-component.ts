@@ -7,9 +7,7 @@ require('./main-component.scss');
   template: require('./main-component.html')
 })
 export class MainComponent {
-  public hello: string;
 
   constructor() {
-    this.hello = 'Hello World!';
   }
 }
