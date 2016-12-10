@@ -7,9 +7,13 @@ require('./section-content.scss');
   selector: 'main-component',
   template: `
     <div id="content-wrapper">
+   
     <head-section></head-section>
     <map-section></map-section>
     <restaurant-section></restaurant-section>
+    <live-updates></live-updates>
+    <order-section></order-section>
+    
 </div>
 `
 })

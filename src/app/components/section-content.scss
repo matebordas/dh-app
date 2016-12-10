@@ -28,8 +28,9 @@
 }
 
 .phone-image {
-  transform: translateY(5%);
+  transform: translateY(10%);
   position: absolute;
+  max-height: 500px;
 
   &.align-left {
     left: 20%;

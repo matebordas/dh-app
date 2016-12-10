@@ -1,13 +1,13 @@
 import {Component} from '@angular/core';
 
 @Component({
-    selector: 'map-section',
+    selector: 'live-updates',
     template: `
-    <section class="screen-size section-content">
+   <section class="screen-size section-content">
     <div class="row">
       
       <span class="col-sm-6">
-          <img src="../../assets/images/phone_1.png"
+          <img src="../../assets/images/phone_3.png"
                alt="Phone 1"
                class="phone-image align-right">
       </span> <!--left -->
@@ -15,13 +15,12 @@ import {Component} from '@angular/core';
       <span class=" col-sm-6">
       
         <div class="image-container align-left">
-              <img src="../../assets/icons/rich_icon_1@2x.png"
+              <img src="../../assets/icons/rich_icon_3@2x.png"
                    alt="Map icon"
                    class="image-icon">
     
               <h4 class="image-description">
-                Dein Zugang zu über <strong>10 000+</strong> Restaurants <br>
-                und mehr als <strong>60</strong> verschiedenen Küchen
+                <strong>Live Updates</strong> zu Bestellungen
               </h4>
         </div>
       </span> <!--right -->
@@ -30,6 +29,6 @@ import {Component} from '@angular/core';
     </section>
 `
 })
-export class MapSectionComponent {
+export class LiveUpdatesSectionComponent {
 
 }

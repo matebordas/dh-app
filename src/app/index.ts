@@ -5,6 +5,8 @@ import {MainComponent} from "./components/main-component";
 import {HeadSectionComponent} from "./components/header-section/header-section.component";
 import {MapSectionComponent} from "./components/map-section/map-section.component";
 import {RestaurantSectionComponent} from "./components/restaurant-section/restaurant-section.component";
+import {LiveUpdatesSectionComponent} from "./components/live-updates-section/live-updates-section-component";
+import {OrderSectionComponent} from "./components/order-section/order-section.component";
 
 @NgModule({
   imports: [
@@ -16,7 +18,9 @@ import {RestaurantSectionComponent} from "./components/restaurant-section/restau
     MainComponent,
     HeadSectionComponent,
     MapSectionComponent,
-    RestaurantSectionComponent
+    RestaurantSectionComponent,
+    LiveUpdatesSectionComponent,
+    OrderSectionComponent
   ],
   bootstrap: [RootComponent]
 })
