@@ -3,7 +3,7 @@ import {Component} from '@angular/core';
 @Component({
     selector: 'map-section',
     template: `
-    <section class="screen-size section-content">
+    <section class="screen-size container-fluid">
     <div class="row">
       
       <span class="col-sm-6">
@@ -12,9 +12,9 @@ import {Component} from '@angular/core';
                class="phone-image align-right">
       </span> <!--left -->
 
-      <span class=" col-sm-6">
+      <span class="col-sm-6">
       
-        <div class="image-container align-left">
+        <div class="image-container align-left" id="map-image-container">
               <img src="../../assets/icons/rich_icon_1@2x.png"
                    alt="Map icon"
                    class="image-icon"

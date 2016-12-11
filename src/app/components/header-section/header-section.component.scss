@@ -5,9 +5,14 @@
     background-image: url('../../../assets/images/Header_image.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: calc(#{$small-section-height} - #{$head-footer-init-height});
 
     @media only screen and (min-width: 1000px) {
       height: calc(#{$section-height-laptop} - #{$head-footer-height});
+    }
+
+    @media only screen and (min-width: 600px) {
+      min-height: calc(#{$medium-section-height} - #{$head-footer-height});
     }
   }
 }
@@ -17,14 +22,25 @@
   top: 40%;
   text-align: center;
   display: block;
-  position: relative;
+  position: absolute;
+  width: 100%;
 
   .main-title {
     font-family: HeavyFont;
+    font-size:  x-large;
+
+    @media only screen and (min-width: 560px) {
+      font-size: 36px;
+    }
   }
 
   .secondary-title {
     font-family: RegularFont;
+    font-size: large;
+
+    @media only screen and (min-width: 560px) {
+      font-size: 24px;
+    }
   }
 
   h1, h2, h3 {
@@ -39,16 +55,35 @@
   bottom: 0;
   display: block;
   margin: 0;
-  height: $head-footer-height;
+  height: $head-footer-init-height;
+
+  @media only screen and (min-width: 768px) {
+    height: $head-footer-height;
+  }
 
   span {
     text-align: center;
     transform: translateY(40%);
+
+    @media only screen and (max-width: 767px) {
+      display: block;
+      clear: both;
+      font-size: small;
+      width: 100%;
+    }
+
+    &.left-side {
+      margin-bottom: 10px;
+
+      @media only screen and (min-width: 768px) {
+        margin-bottom: 0;
+        font-weight: 700;
+      }
+    }
   }
 
   .left-side {
     color: #ffffff;
     font-family: RegularFont;
   }
-
 }

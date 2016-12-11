@@ -31,7 +31,8 @@ import {Component} from '@angular/core';
               <span class="col-sm-6">
                      <img src="../../assets/images/phone_4.png"
                        alt="Phone 1"
-                       class="phone-image align-left">
+                       class="phone-image align-left"
+                       id="order-phone-image">
               </span> <!-- rigth side -->
         
         </div> <!--row -->

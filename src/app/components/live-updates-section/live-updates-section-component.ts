@@ -14,7 +14,7 @@ import {Component} from '@angular/core';
 
       <span class=" col-sm-6">
       
-        <div class="image-container align-left">
+        <div class="image-container align-left" id="updates-image-container">
               <img src="../../assets/icons/rich_icon_3@2x.png"
                    alt="Updates icon"
                    class="image-icon"

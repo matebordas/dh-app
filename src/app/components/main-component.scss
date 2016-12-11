@@ -4,7 +4,9 @@
   height: 100%;
   width: 100%;
   display: block;
-  position: absolute;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 .screen-size {
@@ -12,10 +14,15 @@
   position: relative;
   height: 100%;
   width: 100%;
+  min-height: $small-section-height;
 
   /* laptops and desktops */
   @media only screen and (min-width: 1000px) {
     min-height: $section-height-laptop;
+  }
+
+  @media only screen and (min-width: 600px) {
+    min-height: $medium-section-height;
   }
 }
 

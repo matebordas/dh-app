@@ -1,20 +1,35 @@
 @import '../../../assets/variables';
 
-/*$top-section-height: 50%;*/
 $top-section-height: calc(#{$section-height-laptop}/ 2);
 $download-app-wrapper-height: 70px;
 $nav-top-padding: 30px;
 
+/***********************/
+/* HEADER */
 header {
   background: #ffffff;
-  position: absolute;
+  position: relative;
   width: 100%;
   top: 0;
   display: block;
   margin: 0;
-  height: $top-section-height;
+  height: auto;
   text-align: center;
   padding-top: 2%;
+
+  @media only screen and (min-width: 600px) {
+    position: absolute;
+    height: $top-section-height;
+  }
+
+  h3 {
+    font-size: medium;
+
+    @media only screen and (min-width: 550px) {
+      font-size: 24px;
+      font-weight: 500;
+    }
+  }
 
   .glyphicon {
     position: absolute;
@@ -53,26 +68,62 @@ header {
   height: $download-app-wrapper-height;
   background: red;
   width: 100%;
-  position: absolute;
+  position: relative;
+  bottom: 0;
+
+  @media only screen and (min-width: 600px) {
+    position: absolute;
+  }
 
   .download-app-btn {
     top: 25%;
     height: 40px;
     position: relative;
-    width: 200px;
+    width: auto;
+
+    @media only screen and (min-width: 500px) {
+      width: 200px;
+    }
   }
 }
 
+/********************************************/
+/**** FOOTER ******/
 .footer-content {
   display: block;
   background-color: $purple-bg;
-  height: calc(#{$section-height-laptop}/ 2 + (#{$nav-top-padding} * 4));
-  transform: translateY(calc(#{$section-height-laptop}/ 2));
+  transform: translateY(0);
+  height: auto;
 
+  @media only screen and (min-width: 600px) {
+    transform: translateY(calc(#{$section-height-laptop}/ 2));
+  }
+
+  /** Height **/
+  @media only screen and (min-width: 600px) {
+    height: calc(#{$section-height-laptop} + 400px);
+  }
+
+  @media only screen and (min-width: 1000px) {
+    height: calc(#{$section-height-laptop} + 300px);
+  }
+
+  @media only screen and (min-width: 1110px) {
+    height: calc(#{$section-height-laptop} + (#{$nav-top-padding} * 4));
+  }
+
+  /****************************/
+  /* NAVIGATION */
   .navigation {
     width: 100%;
     clear: both;
-    height: calc(#{$nav-top-padding} * 5);
+    height: auto;
+    margin-bottom: 20px;
+
+    @media only screen and (min-width: 1280px) {
+      margin-bottom: 0;
+      height: calc(#{$nav-top-padding} * 5);
+    }
 
     .nav-pills {
       padding-top: 20px;
@@ -101,18 +152,26 @@ header {
 
       i {
         font-size: xx-large;
-        border-radius: 50%;
-        border: 2px solid #ffffff;
+        border-radius: 0;
         padding-top: 13px;
-        width: 60px;
-        height: 60px;
+        width: auto;
+        height: auto;
         text-align: center;
         margin-top: 6px;
         transform: translateY(-$nav-top-padding);
+        border: none;
+
+        @media only screen and (min-width: 1204px) {
+          border-radius: 50%;
+          width: 60px;
+          height: 60px;
+          border: 2px solid #ffffff;
+        }
       }
-    }
+    } /* nav pill end */
   }
 
+  /****************************/
   /* Links section */
   .links-section {
     position: relative;
@@ -144,4 +203,4 @@ header {
       text-decoration: underline;
     }
   }
-}
+} /* Footer end */

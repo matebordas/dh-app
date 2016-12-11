@@ -16,17 +16,35 @@
   border-radius: 0;
 }
 
+/*******************/
+/* Icon images */
 .image-container {
-  position: absolute;
-  transform: translateY(5%);
-  margin-top: 20%;
+
+  text-align: center;
+  width: 100%;
+  margin-top: 10%;
+
+  @media only screen and (min-width: 768px) {
+    position: absolute;
+    transform: translateY(5%);
+    margin-top: 20%;
+    width: auto;
+  }
 
   &.align-left {
-    left: 20%;
+    @media only screen and (min-width: 768px) {
+      left: 20%;
+    }
   }
 
   &.align-right {
-    right: 10%;
+    @media only screen and (min-width: 768px) {
+      right: 0;
+    }
+
+    @media only screen and (min-width: 800px) {
+      right: 10%;
+    }
   }
 }
 
@@ -39,12 +57,25 @@
 
 .image-description {
   font-family: RegularFont;
+  font-size: medium;
+
+  @media only screen and (min-width: 450px) {
+    font-size: 18px;
+    font-weight: 500;
+  }
 }
 
+/**************************/
+/* Phone images */
 .phone-image {
   transform: translateY(10%);
   position: absolute;
-  max-height: 500px;
+  max-height: 460px;
+  display: none;
+
+  @media only screen and (min-width: 768px) {
+    display: block;
+  }
 
   &.align-left {
     left: 20%;
@@ -54,3 +85,15 @@
     right: 10%;
   }
 }
+
+/*****************/
+/* Misc */
+
+#map-image-container {
+  left: 10%;
+}
+
+#updates-image-container, #order-phone-image {
+  left: 15%;
+}
+
