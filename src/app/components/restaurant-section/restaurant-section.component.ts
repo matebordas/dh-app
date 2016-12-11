@@ -17,7 +17,7 @@ import {Component} from '@angular/core';
             
                       <h4 class="image-description"
                             data-aos="fade-up"
-                            data-aos-offset="50"
+                            data-aos-offset="100"
                             data-aos-anchor="#restaurant-icon"
                             data-aos-easing="ease-in"
                             data-aos-duration="600">

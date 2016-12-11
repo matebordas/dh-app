@@ -21,7 +21,7 @@ import {Component} from '@angular/core';
                    id="map-image">
     
               <h4 class="image-description"
-                    data-aos="slide-left"
+                    data-aos="zoom-in-left"
                     data-aos-offset="50"
                     data-aos-anchor="#map-image"
                     data-aos-easing="ease-in"
