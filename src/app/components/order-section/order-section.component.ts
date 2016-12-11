@@ -9,10 +9,17 @@ import {Component} from '@angular/core';
               <span class="col-sm-6">
                   <div class="image-container align-right">
                       <img src="../../assets/icons/rich_icon_4@2x.png"
-                           alt="Map icon"
-                           class="image-icon">
+                           alt="Order icon"
+                           class="image-icon"
+                           id="order-icon">
             
-                      <h4 class="image-description">
+                      <h4 class="image-description"
+                            data-aos="zoom-in-down"
+                            data-aos-offset="50"
+                            data-aos-anchor="#order-icon"
+                            data-aos-easing="ease-in-cubic"
+                            data-aos-duration="600">
+                            
                         Ganz einfach vorherige <br>
                         <strong>Bestellungen wiederholen</strong>
                 

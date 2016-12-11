@@ -17,9 +17,16 @@ import {Component} from '@angular/core';
         <div class="image-container align-left">
               <img src="../../assets/icons/rich_icon_1@2x.png"
                    alt="Map icon"
-                   class="image-icon">
+                   class="image-icon"
+                   id="map-image">
     
-              <h4 class="image-description">
+              <h4 class="image-description"
+                    data-aos="slide-left"
+                    data-aos-offset="50"
+                    data-aos-anchor="#map-image"
+                    data-aos-easing="ease-in"
+                    data-aos-duration="600">
+                    
                 Dein Zugang zu über <strong>10 000+</strong> Restaurants <br>
                 und mehr als <strong>60</strong> verschiedenen Küchen
               </h4>

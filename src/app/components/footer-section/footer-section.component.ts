@@ -145,6 +145,8 @@ export class FooterSectionComponent {
             infinite: true,
             slidesToShow: 3,
             slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 4000,
             arrows: true,
             prevArrow: "<span class='glyphicon glyphicon-chevron-left left-arrow'></span>",
             nextArrow: "<span class='glyphicon glyphicon-chevron-right right-arrow'></span>",

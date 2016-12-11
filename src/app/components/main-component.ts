@@ -1,4 +1,5 @@
 import {Component} from '@angular/core';
+import * as AOS from "aos";
 
 require('./main-component.scss');
 require('./section-content.scss');
@@ -23,5 +24,6 @@ require('./section-content.scss');
 export class MainComponent {
 
   constructor() {
+    AOS.init();
   }
 }

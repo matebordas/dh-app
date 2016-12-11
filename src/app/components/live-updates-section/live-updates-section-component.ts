@@ -16,10 +16,16 @@ import {Component} from '@angular/core';
       
         <div class="image-container align-left">
               <img src="../../assets/icons/rich_icon_3@2x.png"
-                   alt="Map icon"
-                   class="image-icon">
+                   alt="Updates icon"
+                   class="image-icon"
+                   id="updates-icon">
     
-              <h4 class="image-description">
+              <h4 class="image-description"
+                    data-aos="updates-anim"
+                    data-aos-offset="75"
+                    data-aos-anchor="#updates-icon"
+                    data-aos-easing="ease-in"
+                    data-aos-duration="600">
                 <strong>Live Updates</strong> zu Bestellungen
               </h4>
         </div>
