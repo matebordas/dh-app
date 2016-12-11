@@ -9,6 +9,10 @@ import 'rxjs';
 import '../node_modules/jquery';
 import 'bootstrap/dist/js/bootstrap';
 
+import 'slick-carousel';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
 import './index.scss';
 
 import {enableProdMode} from '@angular/core';

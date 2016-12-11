@@ -1,5 +1,11 @@
+@import '../../assets/variables';
+
 .section-content {
   background-color: #ffffff;
+
+  &.grey-background {
+    background-color: $grey-bg;
+  }
 }
 
 .image-container {

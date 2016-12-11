@@ -3,7 +3,9 @@ import {Component} from '@angular/core';
 @Component({
     selector: 'restaurant-section',
     template: `
-    <section class="screen-size section-content">
+    <section class="screen-size section-content grey-background">
+    
+    <main>
         <div class="row">
               
               <span class="col-sm-6">
@@ -27,6 +29,8 @@ import {Component} from '@angular/core';
               </span> <!-- rigth side -->
         
         </div> <!--row -->
+    </main>
+        
     </section>
 `
 })

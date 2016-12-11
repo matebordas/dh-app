@@ -7,6 +7,7 @@ import {MapSectionComponent} from "./components/map-section/map-section.componen
 import {RestaurantSectionComponent} from "./components/restaurant-section/restaurant-section.component";
 import {LiveUpdatesSectionComponent} from "./components/live-updates-section/live-updates-section-component";
 import {OrderSectionComponent} from "./components/order-section/order-section.component";
+import {FooterSectionComponent} from "./components/footer-section/footer-section.component";
 
 @NgModule({
   imports: [
@@ -20,7 +21,8 @@ import {OrderSectionComponent} from "./components/order-section/order-section.co
     MapSectionComponent,
     RestaurantSectionComponent,
     LiveUpdatesSectionComponent,
-    OrderSectionComponent
+    OrderSectionComponent,
+    FooterSectionComponent
   ],
   bootstrap: [RootComponent]
 })

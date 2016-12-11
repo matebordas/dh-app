@@ -9,10 +9,13 @@ require('./section-content.scss');
     <div id="content-wrapper">
    
     <head-section></head-section>
+    
     <map-section></map-section>
     <restaurant-section></restaurant-section>
     <live-updates></live-updates>
     <order-section></order-section>
+    
+    <footer-section></footer-section>
     
 </div>
 `

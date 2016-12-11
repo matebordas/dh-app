@@ -3,7 +3,7 @@ import {Component} from '@angular/core';
 @Component({
     selector: 'order-section',
     template: `    
-   <section class="screen-size section-content">
+   <section class="screen-size section-content grey-background">
         <div class="row">
               
               <span class="col-sm-6">

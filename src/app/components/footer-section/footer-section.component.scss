@@ -1,0 +1,36 @@
+@import '../../../assets/variables';
+
+$top-section-height: 240px;
+
+header {
+  background: #ffffff;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  display: block;
+  margin: 0;
+  height: $top-section-height;
+  text-align: center;
+  padding-top: 2%;
+
+  .carousel-wrapper {
+   // width: 100%;
+   // text-align: center;
+  }
+
+  .carousel-element {
+    width: 60%;
+    margin-left: 20%;
+
+    .slick-slide {
+
+    }
+  }
+}
+
+
+main {
+  @media only screen and (min-width: 1000px) {
+    height: calc(#{$section-height-laptop} - #{$top-section-height});
+  }
+}
