@@ -12,6 +12,8 @@ import 'bootstrap/dist/js/bootstrap';
 import 'slick-carousel';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import '../node_modules/font-awesome/css/font-awesome.css';
+
 
 import './index.scss';
 

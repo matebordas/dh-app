@@ -24,6 +24,29 @@ require('./footer-section.component.scss');
         </header>
 
         <div class="footer-content">
+        
+            <nav class="navigation">
+            <ul class="nav nav-pills">
+              <li role="presentation"><a>Über uns</a></li>
+              <li role="presentation"><a>Kontakt</a></li>
+              <li role="presentation"><a>AGB</a></li>
+              <li role="presentation"><a>Datenshutz</a></li>
+              <li role="presentation"><a>Presse</a></li>
+              <li role="presentation"><a>Jobs</a></li>
+              <li role="presentation"><a>Affiliate Programm</a></li>
+              <li role="presentation"><a>Sitemap</a></li>
+              
+               <li role="presentation">
+                  <a><i class="fa fa-facebook" aria-hidden="true"></i></a>
+              </li>
+              
+              <li role="presentation">
+                  <a><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              </li> 
+              
+            </ul>
+            </nav>
+        
        </div>
   </section> <!-- HEADER SECTION -->
 `

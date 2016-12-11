@@ -3,6 +3,7 @@
 /*$top-section-height: 50%;*/
 $top-section-height: calc(#{$section-height-laptop}/ 2);
 $download-app-wrapper-height: 70px;
+$nav-top-padding: 30px;
 
 header {
   background: #ffffff;
@@ -68,7 +69,42 @@ header {
   height: calc(#{$section-height-laptop}/ 2);
   transform: translateY(calc(#{$section-height-laptop}/ 2));
 
-  /* @media only screen and (min-width: 1000px) {
-    height: calc(#{$section-height-laptop} - 50%);
-  }*/
+  .navigation {
+
+    .nav-pills {
+      padding-top: 20px;
+      position: absolute;
+      transform: translate(25%);
+      border-bottom: 2px solid #ffffff;
+
+      li {
+        top: 20px;
+      }
+
+      a {
+        font-family: RegularFont;
+        color: #ffffff;
+        outline : none;
+        text-decoration: none;
+      }
+
+      a:hover {
+        cursor: pointer;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+
+      i {
+        font-size: xx-large;
+        border-radius: 50%;
+        border: 2px solid #ffffff;
+        padding-top: 13px;
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        margin-top: 6px;
+        transform: translateY(-$nav-top-padding);
+      }
+    }
+  }
 }
