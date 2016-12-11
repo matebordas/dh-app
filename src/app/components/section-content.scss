@@ -8,6 +8,14 @@
   }
 }
 
+.download-app-btn {
+  color: lighten(#000000, 30%);
+  background-color: $yellow-bg;
+  font-family: BoldFont;
+  border-color: $yellow-bg;
+  border-radius: 0;
+}
+
 .image-container {
   position: absolute;
   transform: translateY(5%);

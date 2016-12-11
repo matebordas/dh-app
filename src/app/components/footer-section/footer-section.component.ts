@@ -9,7 +9,7 @@ require('./footer-section.component.scss');
      <section class="screen-size section-content">
 
         <header>
-              <h3>Was wird über die <strong>LieferHeld App</strong> gesagt</h3>
+            <h3>Was wird über die <strong>LieferHeld App</strong> gesagt</h3>
               
             <div class="carousel-element">
                 <span *ngFor="let item of quotes; let i = index;">
@@ -17,10 +17,14 @@ require('./footer-section.component.scss');
                     <div class="quote-text">{{item.quote}}</div>
                   </span>
             </div>
+            
+            <div class="download-app-wrapper">
+                  <button class="btn btn-default download-app-btn">HOL DIR DIE APP</button>
+            </div>
         </header>
 
-        <main class="main-content">
-       </main>
+        <div class="footer-content">
+       </div>
   </section> <!-- HEADER SECTION -->
 `
 })

@@ -1,6 +1,8 @@
 @import '../../../assets/variables';
 
-$top-section-height: 240px;
+/*$top-section-height: 50%;*/
+$top-section-height: calc(#{$section-height-laptop}/ 2);
+$download-app-wrapper-height: 70px;
 
 header {
   background: #ffffff;
@@ -32,6 +34,7 @@ header {
     margin-top: 50px;
     width: 80%;
     margin-left: 10%;
+    margin-bottom: 50px;
   }
 }
 
@@ -45,9 +48,27 @@ header {
   margin: auto;
 }
 
+.download-app-wrapper {
+  height: $download-app-wrapper-height;
+  background: red;
+  width: 100%;
+  position: absolute;
 
-main {
-  @media only screen and (min-width: 1000px) {
-    height: calc(#{$section-height-laptop} - #{$top-section-height});
+  .download-app-btn {
+    top: 25%;
+    height: 40px;
+    position: relative;
+    width: 200px;
   }
+}
+
+.footer-content {
+  display: block;
+  background-color: $purple-bg;
+  height: calc(#{$section-height-laptop}/ 2);
+  transform: translateY(calc(#{$section-height-laptop}/ 2));
+
+  /* @media only screen and (min-width: 1000px) {
+    height: calc(#{$section-height-laptop} - 50%);
+  }*/
 }

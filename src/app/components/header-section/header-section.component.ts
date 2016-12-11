@@ -24,7 +24,7 @@ require('./header-section.component.scss');
           </span>
     
           <span class="right-side col-sm-6">
-            <button class="btn btn-default">HOL DIR DIE APP</button>
+            <button class="btn btn-default download-app-btn">HOL DIR DIE APP</button>
           </span>
 
     </footer>
