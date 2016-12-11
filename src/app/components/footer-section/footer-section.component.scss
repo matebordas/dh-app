@@ -13,19 +13,36 @@ header {
   text-align: center;
   padding-top: 2%;
 
-  .carousel-wrapper {
-   // width: 100%;
-   // text-align: center;
+  .glyphicon {
+    position: absolute;
+    top: 25%;
+    color: $yellow-bg;
+    font-size: xx-large;
+
+    &.right-arrow {
+      right: -25px;
+    }
+
+    &.left-arrow {
+      left: -25px;
+    }
   }
 
   .carousel-element {
-    width: 60%;
-    margin-left: 20%;
-
-    .slick-slide {
-
-    }
+    margin-top: 50px;
+    width: 80%;
+    margin-left: 10%;
   }
+}
+
+.name-text {
+  font-family: BoldItalicFont;
+}
+
+.quote-text {
+  font-family: RegularItalicFont;
+  width: 250px;
+  margin: auto;
 }
 
 
