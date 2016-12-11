@@ -66,19 +66,24 @@ header {
 .footer-content {
   display: block;
   background-color: $purple-bg;
-  height: calc(#{$section-height-laptop}/ 2);
+  height: calc(#{$section-height-laptop}/ 2 + (#{$nav-top-padding} * 4));
   transform: translateY(calc(#{$section-height-laptop}/ 2));
 
   .navigation {
+    width: 100%;
+    clear: both;
+    height: calc(#{$nav-top-padding} * 5);
 
     .nav-pills {
       padding-top: 20px;
-      position: absolute;
-      transform: translate(25%);
+      padding-left: 6%;
       border-bottom: 2px solid #ffffff;
+      width: 80%;
+      margin: auto;
+      position: relative;
 
       li {
-        top: 20px;
+        top: 20px
       }
 
       a {
@@ -105,6 +110,38 @@ header {
         margin-top: 6px;
         transform: translateY(-$nav-top-padding);
       }
+    }
+  }
+
+  /* Links section */
+  .links-section {
+    position: relative;
+    width: 80%;
+    display: block;
+    margin: auto;
+  }
+
+  .link-wrapper {
+    margin-bottom: 20px;
+  }
+
+  .link-title {
+    font-family: BoldFont;
+    color: #ffffff;
+  }
+
+  .link-group {
+    a {
+      font-family: RegularFont;
+      color: darken($grey-bg, 20%);
+      outline : none;
+      text-decoration: none;
+    }
+
+    a:hover {
+      cursor: pointer;
+      background-color: transparent;
+      text-decoration: underline;
     }
   }
 }
